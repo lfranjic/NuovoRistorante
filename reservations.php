@@ -111,9 +111,22 @@
           </div>
         </form>
         <button style="margin-left: 8.5rem;" id="getTableData" name="showReservations" class="btn btn-secondary">Show Reservations</button>
+        <br>
         <div id="tableContainer">
 
         </div>
+        <br>
+        <div class="form-group">
+          <form action="cancelReservation.php" method="post" class="cancel-reservation">
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required>
+          <br>
+          <label for="time">Time:</label>
+          <input type="time" id="time" name="time" required>
+          <br>
+          <button type="submit" class="btn btn-danger">Cancel reservation</button>
+      </form>
+      </div>
     </div>
 </main>
 <footer>
